@@ -38,7 +38,7 @@ namespace JWT_Demo_MVC
                 {
                     OnAuthenticationFailed = context =>
                     {
-                        Console.WriteLine($"Authentication failed: {context.Exception.Message}");
+                        Console.WriteLine($"Authentication failed logger: {context.Exception.Message}");
                         return Task.FromException(context.Exception);
                     }
                 };
